@@ -13,12 +13,12 @@
         <a class="navbar-brand" href="/">Farmacia Dorgasil</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <a class="navbar-toggler-icon"></a>
         </button>
         <section class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/">Home <a class="sr-only">(current)</a></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="/funcionarios" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -60,13 +60,13 @@
             <section class="form-group col-md-6 input">
                 <label for="nome">Nome</label>
                 <input type="text" class="form-control" value="${data.funcionario.nome}" id="nome" name="nome" placeholder="Nome" required>
-                <span  class="error"></span>
+                <p  class="error"></p>
               </section>
 
               <section class="form-group col-md-6 input">
                 <label for="cpf">CPF</label>
                 <input type="text" class="form-control" id="cpf" value="${data.funcionario.cpf}" name="cpf" placeholder="Ex.:123.456.789-20" required>
-                <span  class="error"></span>
+                <p  class="error"></p>
               </section>
 
               
@@ -76,13 +76,13 @@
               <section class="form-group col-md-6 input">
                 <label for="cargo">Cargo</label>
               <input type="text" class="form-control" id="cargo" value="${data.funcionario.cargo}" name="cargo" placeholder="Farmaceutico" required>
-              <span  class="error"></span>
+              <p  class="error"></p>
             </section>
 
             <section class="form-group col-md-6 input">
                 <label for="email">Email</label>
                 <input type="text" class="form-control" id="email" value="${data.funcionario.email}" name="email" placeholder="qualquerCoisa@meulEmail.com" required>
-                <span  class="error"></span>
+                <p  class="error"></p>
             </section>
             </section>
 
@@ -94,13 +94,13 @@
               <section class="form-group col-md-6 input">
                 <label for="telefone">Telefone</label>
                 <input type="text" class="form-control" id="telefone" value="${data.funcionario.telefone}" name="telefone" placeholder="(71)99999-9999" required>
-                <span  class="error"></span>
+                <p  class="error"></p>
             </section>
 
             <section class="form-group col-md-6 input">
                 <label for="idade">Idade</label>
                 <input type="number" class="form-control" id="idade" value="${data.funcionario.idade}" name="idade" placeholder="22" required>
-                <span  class="error"></span>
+                <p  class="error"></p>
             </section>
 
 

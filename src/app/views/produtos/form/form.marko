@@ -14,12 +14,12 @@
         <a class="navbar-brand" href="/">Farmacia Dorgasil</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <p class="navbar-toggler-icon"></p>
         </button>
         <section class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/">Home <p class="sr-only">(current)</p></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="/funcionarios" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -68,27 +68,27 @@
                             <label for="nome">Nome</label>
                             <input type="text" class="form-control" id="nome" name="nome" value="${data.produto.nome}"
                                 placeholder="Nome do Medicamento" required>
-                            <span class="error"></span>
+                            <p class="error"></p>
                         </section>
                         <section class="form-group col-md-6 input">
                             <label for="laboratorio">Laboratorio</label>
                             <input type="text" class="form-control" id="laboratorio" value="${data.produto.laboratorio}"
                                 name="laboratorio" placeholder="Laboratorio do Medicamento" required>
-                            <span class="error"></span>
+                            <p class="error"></p>
                         </section>
                     </section>
                     <section class="form-group input">
                         <label for="preco">Preço</label>
                         <input type="number" class="form-control" id="preco" value="${data.produto.preco}" name="preco"
                             placeholder="9,99" required>
-                        <span class="error"></span>
+                        <p class="error"></p>
                     </section>
                     <section class="form-group input">
                         <label for="decricao">Descrição</label>
                         <textarea type="text" class="form-control" id="descricao" value="${data.produto.descricao}"
                             name="descricao" rows="3" placeholder="Descrição" required></textarea>
 
-                        <span class="error"></span>
+                        <p class="error"></p>
                     </section>
                     <section class="form-row">
 
@@ -97,13 +97,13 @@
                             <label for="quantidade">Quantidade</label>
                             <input type="number" class="form-control" id="quantidade" name="quantidade" value="${data.produto.quantidade}"
                                 placeholder="1000" required>
-                            <span class="error"></span>
+                            <p class="error"></p>
                         </section>
                         <section class="form-group col-md-6 input">
                             <label for="numeroProduto">Codigo</label>
                             <input type="number" class="form-control" name id="numeroProduto" value="${data.produto.numeroProduto}"
                                 name="numeroProduto" placeholder="123123" required>
-                            <span class="error"></span>
+                            <p class="error"></p>
                         </section>
                     </section>
                     <button type="submit" class="btn btn-block btn-primary">Cadastrar</button>
