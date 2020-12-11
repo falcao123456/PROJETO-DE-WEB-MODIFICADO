@@ -21,7 +21,7 @@ class Tabelas{
 
     criarTabelaFuncionarios(){ // metodo é um funcao dentro de uma classe
 
-        const sql = 'CREATE TABLE IF NOT EXISTS funcionarios (id int NOT NULL AUTO_INCREMENT, cpf int NOT NULL, telefone int NOT NULL, nome varchar(50) NOT NULL, cargo varchar(20) NOT NULL, idade int NOT NULL, email varchar(50) NOT NULL, PRIMARY KEY(id))'
+        const sql = 'CREATE TABLE IF NOT EXISTS funcionarios (id int NOT NULL AUTO_INCREMENT, cpf varchar(50) NOT NULL, telefone varchar(50) NOT NULL, nome varchar(50) NOT NULL, cargo varchar(20) NOT NULL, idade int NOT NULL, email varchar(50) NOT NULL, PRIMARY KEY(id))'
         
         this.conexao.query(sql, msg => {
             if(msg){
