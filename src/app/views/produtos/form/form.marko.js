@@ -4,9 +4,6 @@
 var marko_template = module.exports = require("marko/src/html").t(__filename),
     marko_componentType = "/farmacia-dorgasil$1.0.0/src/app/views/produtos/form/form.marko",
     marko_renderer = require("marko/src/runtime/components/renderer"),
-    marko_attr = require("marko/src/runtime/html/helpers/attr"),
-    helpers_escape_xml = require("marko/src/runtime/html/helpers/escape-xml"),
-    marko_escapeXml = helpers_escape_xml.x,
     marko_loadTag = require("marko/src/runtime/helpers/load-tag"),
     init_components_tag = marko_loadTag(require("marko/src/core-tags/components/init-components-tag")),
     await_reorderer_tag = marko_loadTag(require("marko/src/core-tags/core/await/reorderer-renderer")),
@@ -15,29 +12,11 @@ var marko_template = module.exports = require("marko/src/html").t(__filename),
 function render(input, out, __component, component, state) {
   var data = input;
 
-  out.w("<!doctype html><html lang=pt-br><head><meta charset=utf-8><meta name=viewport content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"><title>Farmacia Dorgasil - Cadastrar Produtos</title><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css integrity=sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2 crossorigin=anonymous></head><body><nav class=\"navbar navbar-expand-md navbar-dark bg-danger mb-4\"><a class=navbar-brand href=#>Farmacia Dorgasil</a><button class=navbar-toggler type=button data-toggle=collapse data-target=#navbarCollapse aria-controls=navbarCollapse aria-expanded=false aria-label=\"Toggle navigation\"><span class=navbar-toggler-icon></span></button><section class=\"collapse navbar-collapse\" id=navbarCollapse><ul class=\"navbar-nav mr-auto\"><li class=nav-item><a class=nav-link href=#>Home <span class=sr-only>(current)</span></a></li><li class=nav-item><a class=\"nav-link \" href=/funcionarios id=navbarDropdown role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false>Funcionarios</a></li><li class=nav-item><a class=nav-link href=/produtos id=navbarDropdown role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false>Produtos</a></li><li class=nav-item><a class=\"nav-link \" href=/funcionarios/form id=navbarDropdown role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false>Cadastrar Funcionarios</a></li><li class=nav-item><a class=\"nav-link active\" href=/produtos/form id=navbarDropdown role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false>Cadastrar Produtos</a></li><li class=nav-item><a class=nav-link href=#>Sobre</a></li></ul></section></nav><main role=main class=container><section class=card><h1 class=\"card-title text-center\">Cadastrar Produto</h1><form action=/produtos method=post class=card-body>");
-
-  if (data.produto.id) {
-    out.w("<section><input type=hidden name=_method value=put></section>");
-  }
-
-  out.w("<input type=hidden id=id name=id" +
-    marko_attr("value", data.produto.id) +
-    "><section class=form-group><label for=nome>Nome:</label><input type=text id=nome name=nome" +
-    marko_attr("value", data.produto.nome) +
-    " placeholder=\"digite o nome do produto\"></section><section class=form-group><label for=laboratorio>Laboratorio:</label><input type=text id=laboratorio name=laboratorio" +
-    marko_attr("value", data.produto.laboratorio) +
-    " placeholder=\"digite o laboratorio do produto\"></section><section class=form-group><label for=preco>Preço:</label><input type=number id=preco name=preco" +
-    marko_attr("value", data.produto.preco) +
-    " placeholder=\"digite o preco do produto\"></section><section class=form-group><label for=quantidade>Quantidade:</label><input type=number id=preco name=preco" +
-    marko_attr("value", data.produto.preco) +
-    " placeholder=\"Ex.: 17\"></section><section class=form-group><label for=descricao>Descricao:</label><textarea cols=20 rows=10 id=descricao name=descricao placeholder=\"digite a descricao do produto\"> " +
-    marko_escapeXml(data.produto.descricao) +
-    " </textarea></section><input type=submit value=Salvar></form></section></main><footer><script src=https://code.jquery.com/jquery-3.5.1.slim.min.js integrity=sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js integrity=sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx crossorigin=anonymous></script></footer>");
+  out.w("<!doctype html><html lang=pt-br><head><meta charset=utf-8><meta name=viewport content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"><title>Farmacia Dorgasil - Cadastrar Produtos</title><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css integrity=sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2 crossorigin=anonymous></head><body><nav class=\"navbar navbar-expand-md navbar-dark bg-danger mb-4\"><a class=navbar-brand href=#>Farmacia Dorgasil</a><button class=navbar-toggler type=button data-toggle=collapse data-target=#navbarCollapse aria-controls=navbarCollapse aria-expanded=false aria-label=\"Toggle navigation\"><span class=navbar-toggler-icon></span></button><section class=\"collapse navbar-collapse\" id=navbarCollapse><ul class=\"navbar-nav mr-auto\"><li class=nav-item><a class=nav-link href=#>Home <span class=sr-only>(current)</span></a></li><li class=nav-item><a class=\"nav-link \" href=/funcionarios id=navbarDropdown role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false>Funcionarios</a></li><li class=nav-item><a class=nav-link href=/produtos id=navbarDropdown role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false>Produtos</a></li><li class=nav-item><a class=\"nav-link \" href=/funcionarios/form id=navbarDropdown role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false>Cadastrar Funcionarios</a></li><li class=nav-item><a class=\"nav-link active\" href=/produtos/form id=navbarDropdown role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false>Cadastrar Produtos</a></li><li class=nav-item><a class=nav-link href=#>Sobre</a></li></ul></section></nav><main role=main class=container><section class=\"card col-md-8\"><h1 class=\"card-title text-center\">Cadastrar Produto</h1><form action=/produtos method=post class=card-body><section class=form-row><section class=\"form-group col-md-6 input\"><label for=nome>Nome</label><input type=text class=form-control id=nome name=nome placeholder=\"Nome do Medicamento\" required><span class=error></span></section><section class=\"form-group col-md-6 input\"><label for=laboratorio>Laboratorio</label><input type=text class=form-control id=laboratorio name=laboratorio placeholder=\"Laboratorio do Medicamento\" required><span class=error></span></section></section><section class=\"form-group input\"><label for=preco>Preço</label><input type=number class=form-control id=preco name=preco placeholder=9,99 required><span class=error></span></section><section class=\"form-group input\"><label for=decricao>Descrição</label><textarea type=text class=form-control id=descricao name=descricao rows=3 placeholder=Descrição required></textarea><span class=error></span></section><section class=\"form-group input\"><label for=inputQuantidade>Quantidade</label><input type=number class=form-control id=inputQuant placeholder=\"Exemplo: 2\" required><span class=error></span></section><button type=submit class=\"btn btn-block btn-success\">Cadastrar</button></form></section></main><footer><script src=https://code.jquery.com/jquery-3.5.1.slim.min.js integrity=sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js integrity=sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx crossorigin=anonymous></script></footer>");
 
   init_components_tag({}, out);
 
-  await_reorderer_tag({}, out, __component, "50");
+  await_reorderer_tag({}, out, __component, "53");
 
   _preferred_script_location_tag({}, out);
 

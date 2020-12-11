@@ -50,43 +50,42 @@
     </nav>
 
     <main role="main" class="container">
-        <section class="card">
+        <section class="card col-md-8">
             <h1 class="card-title text-center">Cadastrar Produto</h1>
             <form action="/produtos" method="post" class="card-body">
             
 
             <section class="form-row">
-
+            <input type="hidden" id="id" name="id" value="${data.produto.id}" />
         <section class="form-group col-md-6 input">
           <label for="nome">Nome</label>
-          <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome do Medicamento" required>
+          <input type="text" class="form-control" id="nome" name="nome" value="${data.produto.nome}" placeholder="Nome do Medicamento" required>
           <span class="error"></span>
         </section>
         <section class="form-group col-md-6 input">
           <label for="laboratorio">Laboratorio</label>
-          <input type="text" class="form-control" id="laboratorio" name="laboratorio" placeholder="Laboratorio do Medicamento" required>
+          <input type="text" class="form-control" id="laboratorio" value="${data.produto.laboratorio}" name="laboratorio" placeholder="Laboratorio do Medicamento" required>
           <span class="error"></span>
         </section>
       </section>
       <section class="form-group input">
         <label for="preco">Preço</label>
-        <input type="number" class="form-control" id="preco" name="preco" placeholder="9,99" required>
+        <input type="number" class="form-control" id="preco" value="${data.produto.preco}" name="preco" placeholder="9,99" required>
         <span class="error"></span>
       </section>
       <section class="form-group input">
         <label for="decricao">Descrição</label>
-        <textarea type="text" class="form-control" id="descricao" name="descricao" rows="3" placeholder="Descrição" required></textarea>
+        <textarea type="text" class="form-control" id="descricao" value="${data.produto.descricao}" name="descricao" rows="3" placeholder="Descrição" required></textarea>
 
         <span class="error"></span>
       </section>
       <section class="form-group input">
-        <label for="inputQuantidade">Quantidade</label>
-        <input type="number" class="form-control" id="inputQuant" placeholder="Exemplo: 2" required>
+        <label for="quantidade">Quantidade</label>
+        <input type="number" class="form-control" id="quantidade" value="${data.produto.quantidade}" placeholder="Exemplo: 2" required>
         <span class="error"></span>
       </section>
-      <button type="submit" class="btn btn-block btn-success">Cadastrar</button>
+      <button type="submit" class="btn btn-block btn-primary">Cadastrar</button>
 
-      </section>
         </form>
         </section>
     </main>

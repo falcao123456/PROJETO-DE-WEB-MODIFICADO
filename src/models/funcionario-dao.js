@@ -22,9 +22,9 @@ class FuncionarioDao {
 
     adiciona(funcionario){
         return new Promise( (resolver, rejeitar) => {
-            const sql = `INSERT INTO Funcionarios(cpf,telefone,nome,cargo, idade) values (?,?,?,?)`
+            const sql = `INSERT INTO Funcionarios(cpf,telefone,nome,cargo, idade, email) values (?,?,?,?,?,?)`
 
-            this._conexao.query(sql,[funcionario.cpf,funcionario.telefone,funcionario.nome,funcionario.cargo, funcionario.idade],
+            this._conexao.query(sql,[funcionario.cpf,funcionario.telefone,funcionario.nome,funcionario.cargo, funcionario.idade, funcionario.email],
                 function(msgErro) {
                     if(msgErro){
                         console.log(msgErro)

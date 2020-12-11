@@ -51,21 +51,21 @@
 
     
     <main role="main" class="container">
-        <section class="card">
+        <section class="card card col-md-8">
             <h1 class="card-title text-center">Cadastrar Funcionario</h1>
         <form class="card-body" action="/funcionarios/form" method="post">
             
-
+        <input type="hidden" id="id" name="id" value="${data.funcionario.id}" />
       <section class="form-row">
             <section class="form-group col-md-6 input">
                 <label for="nome">Nome</label>
-                <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" required>
+                <input type="text" class="form-control" value="${data.funcionario.nome}" id="nome" name="nome" placeholder="Nome" required>
                 <span  class="error"></span>
               </section>
 
               <section class="form-group col-md-6 input">
                 <label for="cpf">CPF</label>
-                <input type="number" class="form-control" id="cpf" name="cpf" placeholder="Ex.:123.456.789-20" required>
+                <input type="number" class="form-control" id="cpf" value="${data.funcionario.cpf}" name="cpf" placeholder="Ex.:123.456.789-20" required>
                 <span  class="error"></span>
               </section>
 
@@ -75,13 +75,13 @@
             <section class="form-row">
               <section class="form-group col-md-6 input">
                 <label for="cargo">Cargo</label>
-              <input type="text" class="form-control" id="cargo" name="cargo" placeholder="Farmaceutico" required>
+              <input type="text" class="form-control" id="cargo" value="${data.funcionario.cargo}" name="cargo" placeholder="Farmaceutico" required>
               <span  class="error"></span>
             </section>
 
             <section class="form-group col-md-6 input">
                 <label for="email">Email</label>
-                <input type="text" class="form-control" id="email" name="email" placeholder="qualquerCoisa@meulEmail.com" required>
+                <input type="text" class="form-control" id="email" value="${data.funcionario.email}" name="email" placeholder="qualquerCoisa@meulEmail.com" required>
                 <span  class="error"></span>
             </section>
             </section>
@@ -93,13 +93,13 @@
             <section class="form-row">
               <section class="form-group col-md-6 input">
                 <label for="telefone">Telefone</label>
-                <input type="number" class="form-control" id="telefone" name="telefone" placeholder="(071)99999-9999" required>
+                <input type="number" class="form-control" id="telefone" value="${data.funcionario.telefone}" name="telefone" placeholder="(071)99999-9999" required>
                 <span  class="error"></span>
             </section>
 
             <section class="form-group col-md-6 input">
                 <label for="idade">Idade</label>
-                <input type="number" class="form-control" id="idade" name="idade" placeholder="22" required>
+                <input type="number" class="form-control" id="idade" value="${data.funcionario.idade}" name="idade" placeholder="22" required>
                 <span  class="error"></span>
             </section>
 
