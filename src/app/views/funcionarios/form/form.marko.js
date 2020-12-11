@@ -23,15 +23,15 @@ function render(input, out, __component, component, state) {
     marko_attr("value", data.funcionario.id) +
     "><section class=form-row><section class=\"form-group col-md-6 input\"><label for=nome>Nome</label><input type=text class=form-control" +
     marko_attr("value", data.funcionario.nome) +
-    " id=nome name=nome placeholder=Nome required><span class=error></span></section><section class=\"form-group col-md-6 input\"><label for=cpf>CPF</label><input type=number class=form-control id=cpf" +
+    " id=nome name=nome placeholder=Nome required><span class=error></span></section><section class=\"form-group col-md-6 input\"><label for=cpf>CPF</label><input type=text class=form-control id=cpf" +
     marko_attr("value", data.funcionario.cpf) +
     " name=cpf placeholder=Ex.:123.456.789-20 required><span class=error></span></section></section><section class=form-row><section class=\"form-group col-md-6 input\"><label for=cargo>Cargo</label><input type=text class=form-control id=cargo" +
     marko_attr("value", data.funcionario.cargo) +
     " name=cargo placeholder=Farmaceutico required><span class=error></span></section><section class=\"form-group col-md-6 input\"><label for=email>Email</label><input type=text class=form-control id=email" +
     marko_attr("value", data.funcionario.email) +
-    " name=email placeholder=qualquerCoisa@meulEmail.com required><span class=error></span></section></section><section class=\"form-group input\"></section><section class=form-row><section class=\"form-group col-md-6 input\"><label for=telefone>Telefone</label><input type=number class=form-control id=telefone" +
+    " name=email placeholder=qualquerCoisa@meulEmail.com required><span class=error></span></section></section><section class=\"form-group input\"></section><section class=form-row><section class=\"form-group col-md-6 input\"><label for=telefone>Telefone</label><input type=text class=form-control id=telefone" +
     marko_attr("value", data.funcionario.telefone) +
-    " name=telefone placeholder=(071)99999-9999 required><span class=error></span></section><section class=\"form-group col-md-6 input\"><label for=idade>Idade</label><input type=number class=form-control id=idade" +
+    " name=telefone placeholder=(71)99999-9999 required><span class=error></span></section><section class=\"form-group col-md-6 input\"><label for=idade>Idade</label><input type=number class=form-control id=idade" +
     marko_attr("value", data.funcionario.idade) +
     " name=idade placeholder=22 required><span class=error></span></section><button type=submit class=\"btn btn-block btn-primary\">Cadastrar</button></section></form></section></main><footer><script src=https://code.jquery.com/jquery-3.5.1.slim.min.js integrity=sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js integrity=sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx crossorigin=anonymous></script></footer>");
 
