@@ -33,7 +33,7 @@ module.exports = (app) => {  // arrow function
         })
 
     app.get('/produtos/form', function (requisicao, resposta) {
-        resposta.marko(require('../views/produtos/form/form.marko'), {prodtuo: {} })
+        resposta.marko(require('../views/produtos/form/form.marko'), {produto: {} })
     })
 
     app.get('/produtos/form/:id', function (requisicao, resposta) {

@@ -53,8 +53,12 @@
     <main role="main" class="container">
         <section class="card card col-md-8">
             <h1 class="card-title text-center">Cadastrar Funcionario</h1>
-        <form class="card-body" action="/funcionarios/form" method="post">
-            
+        <form class="card-body" action="/funcionarios" method="post">
+            <if(data.funcionario.id)>
+            <section>
+                <input type="hidden" name="_method" value="put">
+            </section>
+            </if>
         <input type="hidden" id="id" name="id" value="${data.funcionario.id}" />
       <section class="form-row">
             <section class="form-group col-md-6 input">

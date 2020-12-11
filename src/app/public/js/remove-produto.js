@@ -9,6 +9,7 @@ tabelaLivros.addEventListener('click', (evento) => {
             .then( resposta => {
                 //funcao para remover linha da tabela
                 let tr = elementoClicado.closest(`#livro_${produtoId}`)
+                window.location.reload();
                 tr.remove()
             })
             .catch( msgErro => {
