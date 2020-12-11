@@ -33,7 +33,7 @@ function render(input, out, __component, component, state) {
     marko_attr("value", data.funcionario.telefone) +
     " name=telefone placeholder=(71)99999-9999 required><span class=error></span></section><section class=\"form-group col-md-6 input\"><label for=idade>Idade</label><input type=number class=form-control id=idade" +
     marko_attr("value", data.funcionario.idade) +
-    " name=idade placeholder=22 required><span class=error></span></section><button type=submit class=\"btn btn-block btn-primary\">Cadastrar</button></section></form></section></main><footer><script src=https://code.jquery.com/jquery-3.5.1.slim.min.js integrity=sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js integrity=sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx crossorigin=anonymous></script></footer>");
+    " name=idade placeholder=22 required><span class=error></span></section><button type=submit class=\"btn btn-block btn-primary\">Cadastrar</button></section></form></section></main><footer><script type=text/javascript>\r\n          $(\"#telefone\").mask(\"(00) 00000-0000\");\r\n          $(\"#cpf\").mask(\" 000.000.000-00\");\r\n        </script><script src=https://code.jquery.com/jquery-3.5.1.slim.min.js integrity=sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js integrity=sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx crossorigin=anonymous></script></footer>");
 
   init_components_tag({}, out);
 
