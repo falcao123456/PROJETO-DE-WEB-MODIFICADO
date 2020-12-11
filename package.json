@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/falcao123456/PROJETO-DE-WEB-MODIFICADO.git"
   },
-  "author": "Icaro Felix",
+  "author": "Icaro Felix de Menezes, Filipe de Almeida Santos, Genilson Silva da Conceição, Ricardo dos Santos Barreto, Mateus Gramosa",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
