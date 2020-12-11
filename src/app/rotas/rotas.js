@@ -12,12 +12,6 @@ module.exports = (app) => {  // arrow function
         }
     );
 
-    app.get('/sobre',
-        function (requisicao, resposta) {
-            resposta.marko(require('../views/sobre.marko'))
-        }
-    );
-
     // PRODUTOS !!!
 
     app.get('/produtos',
